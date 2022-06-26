@@ -68,7 +68,7 @@ def play(game, x_player, o_player, print_game=True):
             square = x_player.get_move(game)
         if game.make_move(square, letter):
             if print_game:
-                print(letter + ' makes a move to square {square}')
+                print(letter + f' makes a move to square {square} ')
                 game.print_board()
                 print(' ')
             
@@ -78,8 +78,8 @@ def play(game, x_player, o_player, print_game=True):
                 return letter
             letter = 'O' if letter == 'X' else 'X'
         
-        if print_game:
-            print('its a tie')
+    if print_game:
+        print('its a tie')
 
 if __name__ == '__main__':
     x_player = human_player('X')

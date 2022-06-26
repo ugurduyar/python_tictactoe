@@ -14,7 +14,7 @@ class random_computer_player(player):
         square = random.choice(game.available_moves())
         return square
 
-class human_player(player)
+class human_player(player):
     def __init__(self, letter):
         super().__init__(letter)
     def get_move(self, game):
