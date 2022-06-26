@@ -14,4 +14,8 @@ class tic_tac_toe:
             print('| ' + ' | '.join(row) + ' |')
 
     def available_moves(self):
-        
+        moves = []
+        for (i,spot) in enumerate(self.board):
+            if spot == ' ':
+                moves.append(i)
+        return moves
