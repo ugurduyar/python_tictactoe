@@ -9,4 +9,9 @@ class tic_tac_toe:
 
     @staticmethod
     def print_board_nums():
+        number_board = [[str(i) for i in range(j*3, (j+1)*3)] for j in range(3)]
+        for row in number_board:
+            print('| ' + ' | '.join(row) + ' |')
+
+    def available_moves(self):
         
