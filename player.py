@@ -14,3 +14,7 @@ class random_computer_player(player):
         pass
 
 class human_player(player)
+    def __init__(self, letter):
+        super().__init__(letter)
+    def get_move(self, game):
+        pass
